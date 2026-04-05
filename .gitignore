@@ -52,3 +52,17 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Environment Variables
+.env
+*.env
+.env.*
+
+# Terraform / Infrastructure as Code
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Security & Keys
+*.pem
+*.key
