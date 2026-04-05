@@ -1,0 +1,6 @@
+@Deception.Sensor.Api_HostAddress = http://localhost:5279
+
+GET {{Deception.Sensor.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
