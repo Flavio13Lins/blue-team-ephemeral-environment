@@ -1,6 +1,6 @@
 # Ephemeral Cyber Deception & Automated IR Environment (Work In Progress)
 
-> **Status:** Phase 0 - Architecture & Planning
+> **Status:** Phase 1 - Honey-API Development (TDD Architecture Complete, Implementation In Progress)
 
 ## Objective
 Architecting a self-hosted, ephemeral cyber deception lab to capture real-world threat data, perform detection engineering mapped to the MITRE ATT&CK framework, and automate Incident Response (IR) workflows.
@@ -17,7 +17,9 @@ This project builds a complete, ephemeral "SOC in a box":
 
 ## Current Roadmap
 - [x] Phase 0: Repository setup and architecture design.
-- [ ] Phase 1: Development of the resilient Honey-API.
+- [x] Phase 1a: Honey-API TDD Architecture (29 tests specified, RED state complete).
+- [ ] Phase 1b: Honey-API Implementation (Services, Endpoints, Middleware - GREEN state).
+- [ ] Phase 1c: Code Refactoring and Optimization (REFACTOR state).
 - [ ] Phase 2: SIEM integration (Wazuh) and initial log ingestion.
 - [ ] Phase 3: Detection Engineering (Custom Decoders & Rules).
 - [ ] Phase 4: SOAR integration (Shuffle) and webhook automation.
