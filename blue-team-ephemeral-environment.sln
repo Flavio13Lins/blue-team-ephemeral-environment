@@ -1,0 +1,59 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deception.Sensor.Core.Tests", "tests\Deception.Sensor.Core.Tests\Deception.Sensor.Core.Tests.csproj", "{D36BE3E1-7DC0-CCE7-436E-D0AFBE519C7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deception.Sensor.Api.Tests", "tests\Deception.Sensor.Api.Tests\Deception.Sensor.Api.Tests.csproj", "{A4E6C237-60EF-99A4-0B66-5261F5640F8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deception.Sensor.Core", "src\Deception.Sensor.Core\Deception.Sensor.Core.csproj", "{F48E769C-7D01-768C-D56C-5443E83CD77E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deception.Sensor.Integration", "src\Deception.Sensor.Integration\Deception.Sensor.Integration.csproj", "{E36EDC6F-DFBC-E65B-693B-AA5B20D83B79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deception.Sensor.Api", "src\Deception.Sensor.Api\Deception.Sensor.Api.csproj", "{B1504C3C-685A-AD1E-6D5C-1FDB15DAB22C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D36BE3E1-7DC0-CCE7-436E-D0AFBE519C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36BE3E1-7DC0-CCE7-436E-D0AFBE519C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36BE3E1-7DC0-CCE7-436E-D0AFBE519C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36BE3E1-7DC0-CCE7-436E-D0AFBE519C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E6C237-60EF-99A4-0B66-5261F5640F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E6C237-60EF-99A4-0B66-5261F5640F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E6C237-60EF-99A4-0B66-5261F5640F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E6C237-60EF-99A4-0B66-5261F5640F8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48E769C-7D01-768C-D56C-5443E83CD77E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48E769C-7D01-768C-D56C-5443E83CD77E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48E769C-7D01-768C-D56C-5443E83CD77E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48E769C-7D01-768C-D56C-5443E83CD77E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E36EDC6F-DFBC-E65B-693B-AA5B20D83B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E36EDC6F-DFBC-E65B-693B-AA5B20D83B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E36EDC6F-DFBC-E65B-693B-AA5B20D83B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E36EDC6F-DFBC-E65B-693B-AA5B20D83B79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1504C3C-685A-AD1E-6D5C-1FDB15DAB22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1504C3C-685A-AD1E-6D5C-1FDB15DAB22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1504C3C-685A-AD1E-6D5C-1FDB15DAB22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1504C3C-685A-AD1E-6D5C-1FDB15DAB22C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D36BE3E1-7DC0-CCE7-436E-D0AFBE519C7D} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
+		{A4E6C237-60EF-99A4-0B66-5261F5640F8C} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
+		{F48E769C-7D01-768C-D56C-5443E83CD77E} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{E36EDC6F-DFBC-E65B-693B-AA5B20D83B79} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{B1504C3C-685A-AD1E-6D5C-1FDB15DAB22C} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30F9A545-C248-4838-A632-EBD1AF075129}
+	EndGlobalSection
+EndGlobal

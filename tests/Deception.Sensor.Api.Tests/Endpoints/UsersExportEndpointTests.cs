@@ -1,8 +1,6 @@
 namespace Deception.Sensor.Api.Tests.Endpoints;
 
-using Deception.Sensor.Api.Tests.Fixtures;
 using System.Net;
-using System.Web;
 
 public class UsersExportEndpointTests : IClassFixture<TestApiContextFixture>
 {

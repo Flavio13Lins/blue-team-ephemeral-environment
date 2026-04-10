@@ -1,11 +1,5 @@
 namespace Deception.Sensor.Api.Tests.Fixtures;
 
-using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Moq;
-using Deception.Sensor.Core.Services;
-
 public class TestApiContextFixture : IDisposable
 {
     public WebApplicationFactory<Program> Factory { get; }
@@ -14,6 +8,8 @@ public class TestApiContextFixture : IDisposable
 
     public TestApiContextFixture()
     {
+        MockLogger = new Mock<ILogger<Program>>();
+
         // Create WebApplicationFactory that configures the application for testing
         Factory = new WebApplicationFactory<Program>()
             .WithWebHostBuilder(builder =>
@@ -28,7 +24,6 @@ public class TestApiContextFixture : IDisposable
                         services.Remove(loggerProvider);
                     }
 
-                    MockLogger = new Mock<ILogger<Program>>();
                     services.AddScoped(sp => MockLogger.Object);
 
                     // Register services for dependency injection in tests
