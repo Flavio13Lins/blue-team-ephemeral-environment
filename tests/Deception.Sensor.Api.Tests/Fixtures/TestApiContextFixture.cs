@@ -1,4 +1,9 @@
 namespace Deception.Sensor.Api.Tests.Fixtures;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Moq;
+using Microsoft.Extensions.Logging;
+using Deception.Sensor.Core.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 public class TestApiContextFixture : IDisposable
 {

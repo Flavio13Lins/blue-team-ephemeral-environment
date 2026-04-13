@@ -1,6 +1,8 @@
 using Deception.Sensor.Api.Infrastructure;
 using Deception.Sensor.Api.Middleware;
 using Deception.Sensor.Core.Services;
+using Serilog;
+using Serilog.Formatting.Compact;
 
 var builder = WebApplication.CreateBuilder(args);
 
