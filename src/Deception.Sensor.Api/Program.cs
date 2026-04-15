@@ -1,11 +1,25 @@
 using Deception.Sensor.Api.Infrastructure;
 using Deception.Sensor.Api.Middleware;
 using Deception.Sensor.Core.Services;
+using Serilog;
+using Serilog.Formatting.Compact;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<ITarpittingService, TarpittingService>();
 builder.Services.AddScoped<ITelemetryCaptureService, TelemetryCaptureService>();
+
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.File(
+        path: "/app/logs/deception.log",
+        formatter: new CompactJsonFormatter(),
+        rollingInterval: RollingInterval.Day,
+        fileSizeLimitBytes: 10_000_000, // 10MB por arquivo
+        retainedFileCountLimit: 30)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 

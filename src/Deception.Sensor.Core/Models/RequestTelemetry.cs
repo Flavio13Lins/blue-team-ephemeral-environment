@@ -10,6 +10,8 @@ public class RequestTelemetry
     public string SourceIp { get; init; } = string.Empty;
     public string HttpMethod { get; init; } = string.Empty;
     public string Path { get; init; } = string.Empty;
+    public string AttackerIp { get; init; } = string.Empty;
+    public string ProxyIp { get; init; } = string.Empty;
 
     public static Dictionary<string, string> FromHeaders(IHeaderDictionary headers)
     {
